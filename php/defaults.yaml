@@ -1,0 +1,8 @@
+{% load_yaml as rawmap %}
+Debian:
+  pkgs:
+    - php-pear
+  peardir: /usr/share/php
+  localextrootdir: /usr/local/share
+  maillog: {}
+{% endload %}
