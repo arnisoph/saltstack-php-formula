@@ -3,6 +3,9 @@
 {% from 'php/defaults.yaml' import rawmap with context %}
 {% set datamap = salt['grains.filter_by'](rawmap, merge=salt['pillar.get']('php:lookup')) %}
 
+include: {{ datamap.sls_include|default([]) }}
+extend: {{ datamap.sls_extend|default({}) }}
+
 php:
   pkg:
     - installed
