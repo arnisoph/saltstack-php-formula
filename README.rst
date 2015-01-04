@@ -12,7 +12,7 @@ NOTICE BEFORE YOU USE
 TODO
 ----
 
-None
+* add /var/log/phpmail.log logrotation
 
 Instructions
 ------------
