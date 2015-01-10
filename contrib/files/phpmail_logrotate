@@ -1,0 +1,8 @@
+/var/log/phpmail.log {
+  rotate 14
+  weekly
+  compress
+  missingok
+  notifempty
+  create 622 root root
+}

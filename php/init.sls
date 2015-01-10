@@ -65,3 +65,12 @@ php_maillog:
     - group: root
     - mode: 622
 
+php_maillog_logrotate:
+  file:
+    - managed
+    - name: {{ datamap.maillog_logrotate.path|default('/etc/logrotate.d/phpmail') }}
+    - source: {{ datamap.maillog_logrotate.template_path|default('salt://php/files/phpmail_logrotate') }}
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja

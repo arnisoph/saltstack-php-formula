@@ -5,9 +5,11 @@ Debian:
   peardir: /usr/share/php
   localextrootdir: /usr/local/share
   maillog: {}
+  maillog_logrotate: {}
 RedHat:
   pkgs: []
   peardir: /usr/share/php
   localextrootdir: /usr/local/share
   maillog: {}
+  maillog_logrotate: {}
 {% endload %}
