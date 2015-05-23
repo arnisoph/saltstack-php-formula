@@ -1,0 +1,8 @@
+name: saltstack-php-formula
+source: https://github.com/bechtoldt/saltstack-php-formula
+summary: SaltStack Formula to set up and configure PHP, a scripting language that is especially suited to web development
+todo:
+  - add instructions how to use formhelper, add information about it in the formula-docs (dependency), show up alternative?
+  - 'table/ matrix: os/salt compatibility (dedicated file)'
+  - add list of available states
+  - add tests
